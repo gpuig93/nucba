@@ -1,0 +1,98 @@
+/* El asterisco aplica para absolutamente todo, reemplaza al Body, es mejor así */
+/* Ctrl + K -- + Ctrl+C para comentar o Ctrl+U para descomentar */
+
+/* * {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+} */
+        h1 {
+            color:blue;
+        }
+        .title-1, h2 {
+            color: brown;
+        }
+        .title-2, h2 {
+            color: burlywood;
+        }
+        .title-3 {
+            color: chartreuse;
+        }
+        
+
+        #title {
+            background-color: crimson;
+        }
+
+        input[type="checkbox"] {
+            width: 100px;
+            height: 100px;
+        }
+
+/*a:link no visitado, a:visited visitado
+Se llaman pseudoclases, son clases para Estados*/
+        .italic {
+            font-style: italic;
+        }
+
+        a {
+            color: cyan;
+        }
+
+        a:visited {
+            color: rebeccapurple
+        }
+        
+        a:hover {
+            background-color: saddlebrown;
+        }
+
+        p {
+            color: blue;
+        }
+
+        p:first-child {
+            color: blueviolet;
+        }
+
+        p:last-child {
+            color: cyan;
+        }
+
+        /* Elegir qué párrafo se va a comportar de esta manera */
+        p:nth-child(2) {
+            font-size: 16px;
+        }
+
+        /* Los child pares */
+        p:nth-child(even) {
+            background: darkgrey;
+        }
+
+        /* Los child impares */
+        p:nth-child(odd) {
+            background: darkkhaki;
+        }
+
+        p::first-letter {
+            font-size: 30px;
+        }
+    
+        h1 p::first-letter {
+            font-size: 25;
+        }
+
+        div {
+            border: 5px dashed red;
+        }
+
+        .cuadrado {
+            width: 30px;
+            height: 30px;
+            background-color: seagreen;
+            border: 2px solid blue;
+            border-radius: 50%;
+        }
+
+        /* 1em = 16px | El em es una unidad relativa que funciona según la pantalla */
