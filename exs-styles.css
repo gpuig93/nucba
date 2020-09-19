@@ -1,0 +1,49 @@
+/* .container {
+    height: 50%;
+    max-height: 400px;
+    width: 30%;
+    max-width: 400px;
+    border: dotted;
+    overflow: scroll;
+    font-family: "UnaTipoPiola", sans-serif;
+    font-size: 40px;
+} */
+
+.container {
+    width: 100%;
+    height: 100%;
+    border: solid 1px black;
+    background-color: lightgoldenrodyellow;
+    display: flex; 
+    flex-direction: row-reverse;
+    /* Flex es para que se ponga uno al lado del lotro */
+}
+
+.cuadrados {
+    width: 100px;
+    height: 100px;
+    background-color: lightgreen;
+    border: 1px solid black;
+    margin: 10px;
+    font-size: 40px;
+    font-family: "UnaTipoPiola";
+}
+
+p {
+    display: flex;
+    /* justify-content y align-items no funcionan sin el FLEX */
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+@font-face {
+    font-family: "UnaTipoPiola";
+    src: url("AvenirLTStd-Black.otf");
+    font-weight: bolder;
+    font-style: normal;
+}
+
+/* overflow= todo el contenido fuera de la caja, elegir si se ve o no */
