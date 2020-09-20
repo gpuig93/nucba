@@ -1,0 +1,48 @@
+
+.box {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+}
+
+/* #two {
+    position: relative;
+    top: 20px;
+    left: 20px;
+    background-color: blue;
+} */
+    
+/* Position: arelative: Los límites se los da el elemento anterior/siguiente */
+
+#two {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: blue;
+}
+
+#one {
+    position: fixed;
+    top: 80px;
+    left: 10px;
+    background: purple;
+}
+
+.outer {
+    width: 500px;
+    height: 300px;
+    overflow: scroll;
+    padding-left: 150px;
+}
+
+/* Position: absolute, hace como si el resto no existiera. Los límites se los da el DOCUMENTO */
+
+
+.grid {
+    display: grid;
+    grid-template-columns: 50px 300px;
+    grid-template-rows: 200px 75px;
+}
