@@ -1,0 +1,117 @@
+p {
+    animation-name: tuvieja;
+    animation-duration: 3s;
+    animation-iteration-count: infinite; 
+    /* cantidad de veces a repetirse */
+    animation-direction: alternate;
+    /*  alternate (vuelve a su estado inicial), reverse (animación a la inversa), alternate-reverse*/
+}
+
+/* Forma acotada de hacerlo (y mejor) */
+/* p{
+    animation: 3s infinite alternate pepito;
+} */
+
+
+/* Forma vieja de usarla, ahora se usa con alias */
+@keyframes tuvieja {
+    /* o from { */
+    0% {
+        margin-left: 100%;
+        width: 300%;
+    }
+
+    75% {
+        font-size: 300%;
+        margin-left: 25%;
+        width: 150%;
+    }
+
+    /* o to { */
+    100% {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+a:active {
+    animation: 3s slidein;
+}
+
+/*@keyframes slidein {
+
+
+ from {
+    margin-left: 100%;
+    width: 300%;
+}
+
+75% {
+    font-size: 300%;
+    margin-left: 25%;
+    width: 150%;
+}
+
+to {
+    margin-left: 0%;
+    width: 100%;
+}
+} */
+
+div {
+    width: 100px;
+    height: 100px;
+    background: red;
+    animation: 2s square;
+    animation-delay: 2s;
+    position: relative;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+/* @keyframes square {
+    from {
+        background: red;
+        left: 0px;
+        top: 0px;
+    }
+
+    to {
+        background: yellow;
+        left: 300px;
+        top: 0px;
+    }
+} */
+
+@keyframes square {
+from {
+    transform: translate(300px);   
+}
+
+to {
+    transform: translate(0px);
+}
+}
+
+.animation {
+    transform: scale(0.5);
+    animation-name: heart;
+    animation-duration: .7s;
+    /* animation-timing-function: linear; */
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes heart {
+    from {
+        transform: scale(.5);
+    }
+
+    50% {
+        transform: scale(0.7);
+    }
+
+    to {
+        transform: scale(.6);
+    }
+}
