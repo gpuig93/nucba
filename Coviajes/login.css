@@ -1,0 +1,202 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.6px;
+    font-size: 16px;
+    background: white;
+    color:  #3A3938;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: #3A3938;
+    font-weight: 700;
+
+}
+
+.div-img {
+    display: none;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    color: 1D1D1C
+  }
+
+a p{
+      font-weight: 100;
+  }
+
+
+  .title {
+    height: 10vh;
+    width: 50%;
+    margin: 0 auto 0 auto;
+    text-align: center;
+}
+
+.logo-b {
+    width: 240px;
+    /* padding-top: 40px; */
+    visibility: visible;
+}
+
+.logo-w {
+
+    visibility: hidden;
+}
+
+.container {
+    width: 100%;
+    height: 90vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login__inputs {
+    width: 75%;
+    max-width: 600px;  
+}
+
+.login__inputs p {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.login__inputs p label {
+    padding-bottom: 10px
+}
+
+
+.login__inputs p input {
+    height: 40px;
+    border: none;
+    padding: 0 20px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    font-family: 'Poppins';
+}
+
+
+
+.login__inputs p input::placeholder {
+    color: gray;
+    font-weight: 300;
+}
+
+.login__inputs p button {
+    width: 100%;
+    height: 45px;
+    background: rgb(46,43,87);
+    background: linear-gradient(90deg, rgba(46,43,87,1) 0%, rgba(93,98,170,1) 100%);
+    color:  #ffffff;
+    border-radius: 25px;
+    border: 1px solid #202157;
+    font-family: 'Poppins';
+    font-size: 16px;
+    letter-spacing: 0.6px;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.login__inputs p button:hover {
+    opacity: 0.6
+}
+
+
+.vr-img {
+        visibility: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: white
+}
+
+input {
+    background: #E9E9E9;
+}
+@media screen and (max-width: 1400px) {
+    .vr-img {
+        position: absolute;
+        right: 0%;
+    }
+}
+@media screen and (min-width: 1000px) {
+    .div-img {
+        display: flex;
+    }
+    .logo-b {
+        visibility: hidden;
+        display: none;
+    }
+
+    .logo-w {
+        margin: auto;
+        width: 240px;
+        padding-top: 40px;
+        visibility: visible;
+    }
+
+    h1 {
+        color: white;
+    }
+    
+
+    .vr-img {
+        visibility: visible;
+        border-radius: 0 20px 20px 0;
+        width: 450px;
+        position: absolute;
+        left: 60%;
+        bottom: 0;
+        height: auto;
+        background-image: url('./fondo-formas-organicas-abstractas-dibujadas-mano_23-2148408633.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .login__inputs {
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .login__inputs p {
+        width: 70%;
+        margin: 10px 0;
+    }
+    .content {
+        max-width: 550px;
+        width: 50%;
+        background: white;
+        height: 60%;
+        flex-direction: row;
+        border-radius: 20px;
+        box-shadow: 0px 0px 26px -5px rgba(0,0,0,0.62);
+    }
+    html, body {
+        background: rgb(53,54,55);
+        background: linear-gradient(142deg, rgba(53,54,55,1) 0%, rgba(18,18,16,1) 100%);
+    }
+    .login__inputs p:last-child button {
+        width: 100%
+    }
+}

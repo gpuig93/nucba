@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="coviajes-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:ital,wght@0,400;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
+    <title>Coviajes RV | Viajá sin limitaciones</title>
+</head>
+<body>
+<!-- 
+      <nav id="hamnav">
+
+        
+        <label for="hamburger">&#9776;</label>
+        <input type="checkbox" id="hamburger"/>
+        
+
+        <img src="assets/logo.svg" class="logo" alt="coviajes logo">
+        <ul>
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">Galería</a></li>
+          <li><a href="#">Testimonios</a></li>
+          <li class="demo"><a href="#" class="demo-text">Probá la Demo</a></li>
+        </ul>
+      </nav> -->
+
+
+      <nav id="hamnav">
+        <!-- [THE HAMBURGER] -->
+        <label for="hamburger">&#9776;</label>
+        <input type="checkbox" id="hamburger"/>
+   
+        <!-- [MENU ITEMS] -->
+        
+        <div id="hamitems">
+            <div id="logo">
+                <img src="assets/logo.svg" class="logo" alt="coviajes logo">
+            </div>
+          <a href="#home">Home</a>
+          <a href="#galeria">Galería</a>
+          <a href="#testimonios">Testimonios</a>
+          <a class="demo" href="#formulario">Probá la Demo</a>
+        </div>
+      </nav>
+
+
+      <section id="home" class="home-slider">
+        <div class="titulos">
+            <h3>IDEAL PARA LA CUARENTENA</h3>
+            <h1>
+                Pasá la pandemia viajando
+                en Realidad Virtual
+            </h1>
+            <img src="assets/ps5xbox.svg" class="ps5xbox" alt="disponible en PS5 y Xbox X Series">
+        </div>
+        <div class="whitecut"><img src="assets/whitecut.svg"></div>
+ 
+      </section>
+
+      <section class="fix">
+        <div></div>
+    </section>
+
+
+      <section>
+        <div class="vr">
+            <img class="vr-image" src="assets/vr.png" alt="Gafas Realidad Virtual">
+        </div>
+      </section>
+
+      <section id="galeria" class="gallery">
+        <div>
+            <h2>No dejes que el COVID-19 te impida conocer los
+                lugares más maravillosos del mundo.</h2>
+        </div>
+
+        <div class="row">
+            <div class="column">
+              <img src="assets/img1.jpg">
+              <img src="assets/img2.jpg">
+            </div>
+            <div class="column">
+              <img src="assets/img3.jpg">
+
+            </div>
+            <div class="column">
+              <img src="assets/img4.jpg">
+              <img src="assets/img5.jpg">
+            </div>
+          </div>
+      </section>
+
+      <section id="testimonios">
+          <div class="testimonios">
+            <h2>
+                Experiencias reales en un mundo real
+            </h2>
+            <h3>
+                Nuestros usuarios recomiendan vivir experiencias únicas con Coviajes RV
+            </h3>
+              
+              <div class="cards-container">
+                <div class="card">
+                    <img class="quote" src="assets/quote.jpg">
+                    <p>Me cambió la vida, encima tengo fobia a los aviones. ¡No vuelvo a pisar un aeropuerto en mi vida! Muy contento.</p>
+                    <div>
+                        <img src="assets/enzo.jpg">
+                        <h4>Enzo Pérez</h4><i>PS4 User</i>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="quote" src="assets/quote.jpg">
+                    <p>No puedo creer lo real que es esto. Si no salía de casa antes de la cuarentena, ahora mucho menos.</p>
+                    <div>
+                        <img src="assets/pity.jpg">
+                        <h4>Gonzalo Martínez</h4><i>Xbox User</i>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="quote" src="assets/quote.jpg">
+                    <p>Habría que corregir el bug de La Bombonera  que no está completa, le falta una parte. ¡El resto buenísimo!</p>
+                    <div>
+                        <img src="assets/muñe.jpg">
+                        <h4>Marcelo Gallardo</h4><i>PC User</i>
+                    </div>
+                </div>
+            </div>
+          </div>
+      </section>
+
+      <section id="formulario">
+          <div class="form-container">
+            <div class="left-form">
+                <h2>Probá nuestra demo antes que el resto</h2>
+                <p>No dejes que nadie se te anticipe, dejanos tus datos para tener la Demo el primer día de lanzamiento y disfrutar de los paisajes más hermosos del mundo. </p>
+                <p>¡Apurate! Los cupos son limitados.</p>
+
+            </div>
+            <div class="right-form">
+                <form>
+                    <p>
+                        <input id="name" placeholder="Nombre y apellido" type="text"> 
+                    </p>
+                    <p>
+                        <input id="email" placeholder="Correo electrónico" type="email">
+                    </p>
+                    <p>
+                        <select class="disabled" id="consola">
+                            <option disabled selected>¿Qué consola usás?</option>
+                            <option value="PS5">PS5</option>
+                            <option value="Xbox">Xbox X Series</option>
+                            <option value="PC">PC</option>
+                        </select>
+                    </p>
+                    <p>
+                        <input class="checkbox" type="checkbox" checked>
+                        <label> Acepto recibir promociones y descuentos</label> 
+                    </p>
+                    <p>
+                        <button class="btn" type="submit"> Enviar</button>
+                    </p>
+            </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="footer-container">
+            <div class="copyright">
+                <p>© 2020 CoviajesRV. All rights reserved. Design by Gonzalo Puig.</p>
+            </div>
+            <div class="rrss">
+            <a href="https://facebook.com"><img src="assets/face.png" alt="Facebook"></a>
+            <a href="https://twitter.com"><img src="assets/twitter.png" alt="Twitter"></a>
+            <a href="https://youtube.com"><img src="assets/youtube.png" alt="Youtube"></a>
+            </div>
+        </div>
+      </footer>
+
+
+</body>
+</html>
+
